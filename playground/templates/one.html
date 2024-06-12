@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Routes to Routes</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar styles */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Content styles */
+    .content {
+      padding: 20px;
+    }
+    .content h1 {
+      color: #333;
+    }
+    .content p {
+      color: #666;
+    }
+    body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://t4.ftcdn.net/jpg/03/85/07/15/240_F_385071585_SZ8fM8Q6GxUx9CiJBMTUS7EIpIhcM4xe.jpg'); /* Adjust the path to your image file */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 35vh;
+}
+/* Footer styles */
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+}
+
+.footer-left h3,
+.footer-right h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-left p,
+.footer-right p {
+  margin: 5px 0;
+}
+
+
+  </style>
+</head>
+<body>
+{% include 'navbar.html' %}
+
+<div class="content">
+    <!-- <img src="https://t4.ftcdn.net/jpg/03/85/07/15/240_F_385071585_SZ8fM8Q6GxUx9CiJBMTUS7EIpIhcM4xe.jpg" alt="My Image"> -->
+</div>
+<footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>About Us</h3>
+        <p>Hlo guys we are roots to routes</p>
+      </div>
+      <div class="footer-right">
+        <h3>Contact Us</h3>
+        <p>Email: info@rootstoroutes.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

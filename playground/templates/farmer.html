@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers List</title>
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            display: inline-block;
+            vertical-align: top;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Farmer Page</h1>
+    <div class="container">
+        {% for submission in submissions %}
+            <div class="card">
+                <p>Name: {{ submission.name }}</p>
+                <p>Crop Type: {{ submission.crop_type }}</p>
+                <p>Quantity: {{ submission.quantity }}</p>
+                <form method="post" action="{% url 'delete_submission' submission.id %}">
+                    {% csrf_token %}
+                    <button type="submit">Delete</button>
+                </form>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
